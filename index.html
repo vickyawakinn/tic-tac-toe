@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="defined.css" />
+        <title>Tic Tac Toe</title>
+    </head>
+    <body class="light">
+        <div id="app">
+            <!-- menu  -->
+            <div class="menu container active">
+                <div>
+                    <div class="logo-img"></div>
+                    <div class="buttons">
+                        <button class="main-btn" id="menu-self">1 vs 1</button>
+                        <button class="main-btn" id="menu-comp">vs Comp</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- game -->
+            <div class="game container">
+                <div class="board">
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                    <div class="cell"></div>
+                </div>
+                <div class="buttons">
+                    <button class="sec-btn" id="game-re-start">Re-Start</button>
+                    <button class="sec-btn" id="game-back">Back</button>
+                </div>
+            </div>
+
+            <!-- result -->
+            <div class="result container">
+                <div>
+                    <h1 class="resultText"></h1>
+                    <button class="main-btn" id="result-re-match">
+                        Re-Match
+                    </button>
+                    <button class="main-btn" id="result-menu">Menu</button>
+                </div>
+            </div>
+
+            <!-- change theme -->
+            <div class="theme">
+                <div class="theme-icons">
+                    <i class="day-night fa-solid fa-sun"></i>
+                    <i class="day-night fa-solid fa-moon"></i>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>

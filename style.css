@@ -1,0 +1,90 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* colors */
+  --clr-pri-light: #F2E5E5;
+  --clr-pri-dark: #2B3A55;
+  
+  --clr-sec-light: #E8C4C4;
+  --clr-sec-dark: #CE7777;
+
+  /* sizes  */
+  --cell-size: 100px;
+  --mark-size: calc(var(--cell-size) * .8);
+}
+
+/* theme */
+
+.light {
+  --clr-main-bg: var(--clr-pri-light);
+  --clr-main-font: var(--clr-pri-dark);
+  --clr-borders: var(--clr-sec-dark);
+  --clr-sec-bg: var(--clr-sec-light);
+}
+.dark {
+  --clr-main-bg: var(--clr-pri-dark);
+  --clr-main-font: var(--clr-pri-light);
+  --clr-borders: var(--clr-sec-light);
+  --clr-sec-bg: var(--clr-sec-dark);
+}
+
+/* layout */
+
+body {
+  width: 100%;
+  height: 100vh;
+}
+#app {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--clr-main-bg);
+}
+.container {
+  width: 600px;
+  max-width: 90%;
+  height: 90vh;
+  border: 2px solid var(--clr-borders);
+  background-color: var(--clr-sec-bg);
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* typography */
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  color: var(--clr-main-font);
+}
+
+/* custom */
+
+button {
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  color: var(--clr-main-font);
+  background-color: var(--clr-main-bg);
+}
+.sec-btn {
+  font-size: 1.5rem;
+  padding: .5em 1em;
+  font-weight: bold;
+}
+.main-btn {
+  font-size: 2rem;
+  padding: 1em 2em;
+  font-weight: bold;
+}
